@@ -7,11 +7,10 @@ vegetables = [
  {"name": "broccoli", "color": "green"},
 ]
 
-# put above into the csv file and add  length of the name of the vegtable as separate column
 
 import csv
 
-with open('veggies.csv', 'w') as f:
+with open('output/vegetables.csv', 'w') as f:
     writer = csv.writer(f)
     writer.writerow(['name', 'color', 'length_of_name'])
     for veggie in vegetables:
